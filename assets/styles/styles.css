@@ -1053,7 +1053,7 @@ main{
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 90px 20px 100px 20px;
+    padding: 90px 10px 100px 10px;
     background-image: url(/assets/images/about-bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -1067,19 +1067,21 @@ main{
     width: 100%;
     h2{
       color:#B0DA08;
+      font-weight: 400;
     }
     h1{
       color: #ffffff;
       text-align: center;
-      font-size: 60px;
-      font-weight: 400;
+      font-size: 28px;
+      font-weight: 500;
       margin-top: 10px;
-      width: 75%;
+      width: 95%;
       line-height: 70px;
     }
   }
   .working-process-section-sub-container-3{
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 30px;
 
@@ -1095,7 +1097,7 @@ main{
     }
       h1{
         color: white;
-        font-size: 39px;
+        font-size: 28px;
         font-weight: 600;
         margin-bottom: 10px;
       }
@@ -1783,7 +1785,35 @@ footer{
   }
   /* Provided Services Section Starts */
 
-
+  /* Working Process Starts */
+   .working-process-section{
+      padding: 90px 20px 100px 20px;
+    }
+    .working-process-section-sub-container-1,
+    .working-process-section-sub-container-2{
+      width: 100%;
+      h1{
+        font-size: 60px;
+        font-weight: 600;
+        margin-top: 10px;
+        width: 75%;
+        line-height: 70px;
+      }
+    }
+    .working-process-section-sub-container-3{
+      flex-direction: row;
+      gap: 30px;
+    }
+    .working-process-section-sub-container-3-child-1,
+  .working-process-section-sub-container-3-child-2,
+  .working-process-section-sub-container-3-child-3{
+    padding: 0 28px 20px 28px;
+        h1{
+          font-size: 39px;
+          margin-bottom: 10px;
+        }
+    }
+  /* Working Process Ends */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
