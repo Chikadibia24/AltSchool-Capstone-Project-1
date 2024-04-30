@@ -1425,10 +1425,9 @@ main{
   align-items: center;
   border: 1px solid rgb(49, 48, 48);
   border-radius: 8px;
-  padding: 0;
   h1{
     color: #ffffff;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 400;
     margin: -8px;
   }
