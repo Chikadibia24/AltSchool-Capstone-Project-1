@@ -1173,7 +1173,7 @@ main{
     justify-content: center;
     align-items: center;
     img{
-      width: 95%;
+      width: 100%;
     }
   }
 }
@@ -1207,12 +1207,13 @@ main{
   color: #ffffff;
   font-size: 15px;
   font-weight: 300;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .quote-ratings-h2{
   color:#B0DA08;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 0;
   margin-bottom: 5px;
 }
 .quote-ratings-2nd-para{
@@ -1875,9 +1876,11 @@ footer{
 .quote-ratings-1st-para{
     font-size: 20px;
     font-weight: initial;
+    margin-top: 30px;
   }
   .quote-ratings-h2{
   font-size: 23px;
+  margin-top: 20px;
 }
   .quote-ratings-2nd-para{
     font-size: 18px;
