@@ -1021,14 +1021,14 @@ main{
 .provided-services-section-para-gray-color{
   color: rgb(128, 121, 121);
   font-size: 16px;
-  width: 75%;
+  width: 100%;
 }
 .provided-services-section-span{
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #1B1B1C;
-    width: 60%;
+    width: 70%;
     height: 50px;
     border-radius: 5px;
   a{
