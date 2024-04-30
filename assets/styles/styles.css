@@ -1153,32 +1153,46 @@ main{
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 30px;
+  padding: 10px 30px;
   width: 100%;
   border-radius: 10px;
   background-image: url(/assets/images/about-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .aside-div-with-15{
   width: 15%;
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 80px;
   div{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+      width: 95%;
+    }
   }
 }
 .center-div-with-50{
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  left: 0px;
+  position: absolute;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+  background-color: rgba(26, 26, 26, 0.9);
 }
 .quote-ratings{
-  background-image: url(/assets/images/quote.png);
-  background-repeat: no-repeat;
+  /* background-image: url(/assets/images/quote.png);
+  background-repeat: no-repeat; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1191,11 +1205,14 @@ main{
 }
 .quote-ratings-1st-para{
   color: #ffffff;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 300;
   margin-top: 30px;
 }
 .quote-ratings-h2{
   color:#B0DA08;
+  font-size: 20px;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 .quote-ratings-2nd-para{
@@ -1806,7 +1823,6 @@ footer{
     .working-process-section-sub-container-3-child-1,
   .working-process-section-sub-container-3-child-2,
   .working-process-section-sub-container-3-child-3{
-    padding: 0 28px 20px 28px;
         h1{
           font-size: 39px;
           margin-bottom: 10px;
@@ -1827,6 +1843,44 @@ footer{
         width: 75%;
         line-height: 70px;
       }
+  }
+  .testimonial-section-sub-container-3{
+    position: initial;
+    padding: 30px;
+  }
+  .center-div-with-50{
+    width: 60%;
+    position: initial;
+    height: initial;
+    padding-left: initial;
+    left: initial;
+    border-radius: unset;
+    background-color: unset;
+  }
+  .aside-div-with-15{
+    gap: 150px;
+    div{
+      img{
+        width:initial;
+      }
+    }
+  }
+  .quote-ratings{
+    background-image: url(/assets/images/quote.png);
+    background-repeat: no-repeat;
+  }
+  .fa-star{
+    font-size: 18px;
+  }
+.quote-ratings-1st-para{
+    font-size: 20px;
+    font-weight: initial;
+  }
+  .quote-ratings-h2{
+  font-size: 23px;
+}
+  .quote-ratings-2nd-para{
+    font-size: 18px;
   }
   /* Testimonial Section Ends */
 }
