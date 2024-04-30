@@ -1225,7 +1225,10 @@ main{
 .testimonial-section-sub-container-3-child-2-child-2{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
+  padding-right: 10px;
+  /* border: 1px solid blue; */
 }
 .testimonial-slide-tracker-container{
   display: flex;
@@ -1882,11 +1885,15 @@ footer{
   .quote-ratings-h2{
   font-size: 23px;
   margin-top: 20px;
-}
+  }
   .quote-ratings-2nd-para{
     font-size: 18px;
     margin-top: 0;
   }
+  .testimonial-section-sub-container-3-child-2-child-2{
+  align-items: center;
+  padding-right: unset;
+}
   /* Testimonial Section Ends */
 }
 
