@@ -55,8 +55,8 @@ body{
 }
 
 .logo{
-  width: 100%;
-  height: 37%;
+  max-width: 80%;
+  max-height: 30%;
 }
 
 .nav-links-container{
@@ -98,18 +98,19 @@ body{
 
 .let-talk{
   background-color: #c9f31d;
-  height: 47%;
-  width: 100%;
+  max-height: 35%;
+  height: auto;
+  max-width: 100%;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  padding: 0 5px;
+  padding: 7px 4px;
   a{
     text-decoration: none;
     color: #000000;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -121,13 +122,14 @@ body{
 }
 .fa-bars-container{
   background-color: #ffffff;
-  width: 25%;
-  height: 58%;
+  width: 20%;
+  max-height: 40%;
+  height: auto;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 29px;
+  padding: 23px;
   &:hover{
     cursor: pointer;
   }
@@ -153,11 +155,10 @@ main{
 /* Hero Section styling starts here */
 .hero-section{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
   width: 100%;
   height: auto;
-  gap: 15px;
   padding: 0 10px;
   margin: 20px 0 0 0;
   /* background-color: green; */
@@ -171,7 +172,7 @@ main{
   /* background-color: red; */
 }
 .hero-section-aside{
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 80px;
 }
@@ -200,7 +201,7 @@ main{
   }
 }
 .hero-section-main-para-container{
-  width: 60%;
+  width: 100%;
   border-bottom: 1px solid #ffffff;
   padding: 15px 0;
   a{
@@ -215,9 +216,9 @@ main{
 }
 .hero-section-main-para{
   color: #ffffff;
-  font-size: 23px;
+  font-size: 16px;
   span{
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .hero-section-main-para-2{
@@ -229,12 +230,12 @@ main{
 }
 #hero-section-1st-h1{
   color: white;
-  font-size: 90px;
+  font-size: 30px;
   margin: 0;
 }
 #hero-section-2nd-h1{
-  font-size: 90px;
-  margin-top: -30px;
+  font-size: 30px;
+  margin-top: -10px;
   padding: 0;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -296,7 +297,7 @@ main{
   /* border: 1px solid yellow; */
   p{
     color: #ffffff;
-    font-size: 23px;
+    font-size: 16px;
     padding: 0;
     margin: 0;
   }
@@ -309,6 +310,7 @@ main{
 }
 .arrow-img-animate{
   animation: bn-arrow-animation 2s infinite linear;
+  height: 45px;
 }
 @keyframes bn-arrow-animation {
   0%{
@@ -326,11 +328,11 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  /* box-shadow: 1px 1px 2px rgba(0,0,0,0.2); */
   animation: circle-animate 2s infinite linear forwards;
 }
 .video-div-parent{
@@ -343,7 +345,7 @@ main{
   border: 1px solid #ffffff;
   /* background-color: white; */
   border-radius: 50%;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  /* box-shadow: 1px 1px 2px rgba(0,0,0,0.2); */
   animation: none;
   a{
     display: flex;
@@ -356,7 +358,7 @@ main{
 }
 .fa-play{
   color: white;
-  font-size: 50px;
+  font-size: 30px;
 }
 @keyframes circle-animate {
   0%{
@@ -395,14 +397,18 @@ main{
   }
 }
 .hero-section-sub-container-2{
-  width: 40%;
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid blue; */
 }
 #hero-section-img-container{
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   width: 100%;
   img{
-    width: 100%;
+    width: 80%;
+    height: 95%;
   }
 }
 .social-links-container{
@@ -1486,12 +1492,79 @@ footer{
 /* Media Queries */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .nav-links-container{
-    display: flex;
-  }
   .fa-bars-container-mobile{
     display: none;
   }
+  .logo{
+    max-width: 100%;
+    max-height: 37%;
+  }
+  .let-talk{
+  max-height: 47%;
+  max-width: 100%;
+  padding: 8px 5px;
+    a{
+      font-size: 18px;
+    }
+  }
+  .fa-bars-container{
+    width: 25%;
+    max-height: 58%;
+    padding: 29px;
+  }
+  .hero-section{
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+  }
+  .hero-section-aside{
+    display: flex;
+  }
+  #hero-section-1st-h1,#hero-section-2nd-h1{
+    font-size: 90px;
+  }
+  #hero-section-2nd-h1{
+    margin-top: -30px;
+  }
+  .hero-section-main-para-container{
+  width: 60%;
+  }
+  .hero-section-main-para{
+  color: #ffffff;
+  font-size: 23px;
+  span{
+    font-size: 30px;
+  }
+  }
+  .hero-section-main-para-2{
+    line-height: 0;
+  }
+  .animated-video-btn-container{
+    p{
+      font-size: 23px;
+    }
+  }
+  .video-div-main-parent{
+      width: 120px;
+      height: 120px;
+    }
+    .fa-play{
+      font-size: 50px;
+    }
+    .arrow-img-animate{
+      height: 70px;
+    }
+    .hero-section-sub-container-2{
+    width: 40%;
+    }
+  #hero-section-img-container{
+    width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 
 }
 
@@ -1499,7 +1572,14 @@ footer{
 @media only screen and (min-width: 768px) {...}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+  .nav-links-container{
+    display: flex;
+  }
+  
+
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
