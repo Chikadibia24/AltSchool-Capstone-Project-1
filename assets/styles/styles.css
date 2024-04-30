@@ -697,7 +697,7 @@ main{
   }
 }
 .complete-project-section-sub-container-2{
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: center;
   padding-top: 0;
@@ -757,11 +757,11 @@ main{
   }
 .h1-white-30px{
   color: #ffffff;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   margin-top: 0;
-  padding-left: 20px;
-  width: 97%;
+  padding-left: 15px;
+  width: 98%;
   height: 10px;
   display: flex;
   justify-content: space-between;
@@ -772,6 +772,7 @@ main{
     height: 50px;
     margin-bottom: 20px;
     border-radius: 5px;
+    padding: 0 10px;
     a{
       text-decoration: none;
       color: #ffffff;
@@ -1663,10 +1664,13 @@ footer{
     font-size: 30px;
     height: 65px;
     margin-top: -20px;
+    width: 97%;
+    padding-left: 20px;
     span{
       width: 10%;
       height: 60px;
       margin-bottom: 50px;
+      padding: 0;
     }
   }
   .animated-yellow-circle-container{
