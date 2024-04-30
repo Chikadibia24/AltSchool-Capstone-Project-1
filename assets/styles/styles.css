@@ -680,7 +680,7 @@ main{
 .complete-project-section{
   background-color: #141410;
   width: 100%;
-  padding: 90px 10px 100px 10px;
+  padding: 90px 5px 100px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -697,7 +697,7 @@ main{
   }
 }
 .complete-project-section-sub-container-2{
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 0;
