@@ -1267,9 +1267,10 @@ main{
   background-position: center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  padding: 130px 20px 100px 20px;
+  padding: 130px 10px 100px 10px;
 }
 .my-blog-section-sub-container-1{
   width: 37%;
@@ -1284,6 +1285,7 @@ main{
   align-items: center;
   h2{
     color:#B0DA08;
+    font-weight: 400;
   }
 }
 .my-blog-section-sub-container-1-child-2{
@@ -1292,17 +1294,16 @@ main{
   align-items: center;
   h1{
     color: #ffffff;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 400;
     margin-top: 10px;
-    line-height: 55px;
   }
 }
 .my-blog-section-sub-container-1-child-3{
-  margin-top: 10px;
+  margin: 10px 0 40px 0;
 }
 .my-blog-section-sub-container-2{
-  width: 63%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1318,9 +1319,10 @@ main{
 .my-blog-section-sub-container-2-child-2,
 .my-blog-section-sub-container-2-child-3{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 65px;
+  gap: 15px;
   padding: 25px 0;
   border-bottom: 1px solid rgb(49, 48, 48);
   &:hover{
@@ -1331,11 +1333,6 @@ main{
     .fa-eye{
       color: #B0DA08;
     }
-    .image-container{
-      img{
-        display: initial;
-      }
-    }
     h1{
       color:#B0DA08;
     }
@@ -1345,7 +1342,7 @@ main{
       font-size: 16px;
       border: 1px solid rgb(49, 48, 48);
       border-radius: 20px;
-      width: 50%;
+      width: 35%;
       display: flex;
       padding: 6px 0;
       justify-content: center;
@@ -1356,35 +1353,40 @@ main{
     }
     h1{
       color: #ffffff;
-      font-size: 30px;
+      font-size: 18px;
       margin-top: 5px;
     }
 }
 .width-40{
-  width: 40%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
+  /* border: 1px solid blue; */
+}
+.width-40 > a{
+  display: flex;
+  justify-content: center;
 }
 .image-container{
   img{
-    display: none;
-    width: 100%;
+    width: 65%;
     height: 100%;
   }
 }
 .width-16{
-  width: 16%;
+  width: 100%;
 }
 .eye-icon-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid green; */
 }
 .eye-icon{
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #ffffff;
   border-radius: 50%;
   display: flex;
@@ -1891,11 +1893,101 @@ footer{
     margin-top: 0;
   }
   .testimonial-section-sub-container-3-child-2-child-2{
-  align-items: center;
-  padding-right: unset;
-}
+    align-items: center;
+    padding-right: unset;
+  }
   /* Testimonial Section Ends */
+
+  /* My Blog section starts here  */
+  .my-blog-section{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 130px 20px 100px 20px;
+  }
+  .my-blog-section-sub-container-1-child-2{
+    h1{
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 55px;
+    }
+  }
+  .my-blog-section-sub-container-1-child-3{
+    margin: 10px 0 0 0;
+  }
+  .my-blog-section-sub-container-2{
+    width: 65%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+  .my-blog-section-sub-container-2-child-1,
+  .my-blog-section-sub-container-2-child-2,
+  .my-blog-section-sub-container-2-child-3{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+    padding: 25px 0;
+    &:hover{
+      border-bottom: 1px solid #B0DA08;
+      .eye-icon{
+        border: 1px solid #B0DA08;
+      }
+      .fa-eye{
+        color: #B0DA08;
+      }
+      .image-container{
+        img{
+          display: initial;
+        }
+      }
+      h1{
+        color:#B0DA08;
+      }
+    }
+      p{
+        color: rgb(169, 163, 163);
+        font-size: 16px;
+        border: 1px solid rgb(49, 48, 48);
+        border-radius: 20px;
+        width: 50%;
+        display: flex;
+        padding: 6px 0;
+        justify-content: center;
+        align-items: center;
+      }
+      h1{
+        font-size: 30px;
+        margin-top: 5px;
+      }
+  }
+  .width-40{
+    width: 40%;
+    /*flex-direction: column;
+    justify-content: center; */
+    align-items:flex-start;
+  }
+  .image-container{
+    img{
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .width-16{
+    width: 16%;
+  }
+  .eye-icon{
+    width: 70px;
+    height: 70px;
+  }
+  /* My Blog section ends here  */
+
 }
+
+
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
