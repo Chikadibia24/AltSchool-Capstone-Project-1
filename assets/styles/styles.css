@@ -407,8 +407,8 @@ main{
   align-items: flex-end;
   width: 100%;
   img{
-    width: 80%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
   }
 }
 .social-links-container{
@@ -1560,13 +1560,13 @@ footer{
     .hero-section-sub-container-2{
     width: 40%;
     }
-  #hero-section-img-container{
+  /* #hero-section-img-container{
     width: 100%;
     img{
       width: 100%;
       height: 100%;
     }
-  }
+  } */
 
 
 }
