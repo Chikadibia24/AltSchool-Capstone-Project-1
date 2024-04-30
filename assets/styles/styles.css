@@ -842,6 +842,7 @@ main{
 /* Need A Project Section styling starts here */
 .need-a-project-section{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
@@ -850,10 +851,10 @@ main{
   background-position: center;
   background-size: cover;
   width: 100%;
-  padding: 70px 20px 100px 20px;
+  padding: 70px 12px 100px 12px;
 }
 .need-a-project-section-sub-container-1{
-  width: 65%;
+  width: 100%;
 }
 .need-a-project-section-sub-container-1-child-1{
   width: 100%;
@@ -866,11 +867,11 @@ main{
   border-bottom: 1px solid rgb(55, 59, 72);
   h1{
     color: #ffffff;
-    font-size: 60px;
+    font-size: 28px;
     font-weight: 400;
     margin-top: 30px;
-    width: 80%;
-    line-height: 60px;
+    width: 100%;
+    line-height: 35px;
   }
 }
 .need-a-project-section-sub-container-1-child-3{
@@ -904,9 +905,9 @@ main{
   }
 }
 .need-a-project-section-sub-container-2{
-  width: 35%;
+  width: 100%;
   img{
-    width: 98%;
+    width: 88%;
     height: auto;
   }
 }
@@ -1689,6 +1690,31 @@ footer{
   }
   /* Complete Project section ends */
 
+  /* Need A Project Section Starts*/
+  .need-a-project-section{
+    flex-direction: row;
+    gap: 60px;
+    padding: 70px 20px 100px 20px;
+  }
+  .need-a-project-section-sub-container-1{
+    width: 65%;
+  }
+  .need-a-project-section-sub-container-1-child-2{
+    h1{
+      font-size: 60px;
+      margin-top: 30px;
+      width: 80%;
+      line-height: 60px;
+    }
+  }
+  .need-a-project-section-sub-container-2{
+    width: 35%;
+    img{
+      width: 98%;
+      height: auto;
+    }
+  }
+  /* Need A Project Section ends*/
 
 
 }
