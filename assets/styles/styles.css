@@ -617,7 +617,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 70px 20px 100px 20px;
+  padding: 70px 15px 100px 15px;
   h1{
     color: #ffffff;
     font-size: 19px;
@@ -641,7 +641,7 @@ main{
   a{
     display: flex;
     color: #B0DA08;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 0;
     padding-bottom: 0;
     text-decoration: none;
@@ -656,7 +656,7 @@ main{
   p{
     text-align: left;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 14px;
     display: flex;
   }
 }
@@ -1612,7 +1612,6 @@ footer{
   }
   /* Info Display Section Ends */
 
-
   /* Awards Section Starts */
   .awards{
     width: 100%;
@@ -1621,12 +1620,26 @@ footer{
         font-size: 44px;
       };
   }
+  #awards-section-sub-container-1-para{
+    a{
+      gap: 10px;
+    }
+  }
   .awards-section-sub-container{
     p{
       font-size: 20px;
     }
   }
   /* Awards Section Ends */
+
+  /* Complete Project section starts */
+  .complete-project-section{
+    padding: 90px 20px 100px 20px;
+  }
+
+
+  /* Complete Project section ends */
+
 
 
 }
