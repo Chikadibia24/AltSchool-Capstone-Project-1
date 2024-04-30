@@ -1342,7 +1342,7 @@ main{
       font-size: 16px;
       border: 1px solid rgb(49, 48, 48);
       border-radius: 20px;
-      width: 40%;
+      width: 50%;
       display: flex;
       padding: 6px 0;
       justify-content: center;
@@ -1358,7 +1358,7 @@ main{
     }
 }
 .width-40{
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1371,7 +1371,7 @@ main{
 }
 .image-container{
   img{
-    width: 65%;
+    width: 75%;
     height: 100%;
   }
 }
