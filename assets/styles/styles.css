@@ -620,7 +620,7 @@ main{
   padding: 70px 20px 100px 20px;
   h1{
     color: #ffffff;
-    font-size: 44px;
+    font-size: 19px;
     font-weight: 500;
     margin-bottom: 13px;
   };
@@ -656,7 +656,7 @@ main{
   p{
     text-align: left;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
   }
 }
@@ -1606,13 +1606,28 @@ footer{
   }
   .about-info-display-section-sub-container-child-2-child-2-flex-childs{
   flex-direction: row;
-}
-.contacts-container{
-  width: 47%;
-  padding-left: 40px;
-}
-
+  }
+  .contacts-container{
+    width: 47%;
+  }
   /* Info Display Section Ends */
+
+
+  /* Awards Section Starts */
+  .awards{
+    width: 100%;
+    padding: 70px 20px 100px 20px;
+    h1{
+        font-size: 44px;
+      };
+  }
+  .awards-section-sub-container{
+    p{
+      font-size: 20px;
+    }
+  }
+  /* Awards Section Ends */
+
 
 }
 
