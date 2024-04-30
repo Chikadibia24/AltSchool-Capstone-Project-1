@@ -641,10 +641,15 @@ main{
   a{
     display: flex;
     color: #B0DA08;
-    gap: 5px;
+    gap: 3px;
     margin-bottom: 0;
     padding-bottom: 0;
     text-decoration: none;
+    font-size: 13px;
+    span{
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 .awards-section-sub-container{
@@ -1623,6 +1628,7 @@ footer{
   #awards-section-sub-container-1-para{
     a{
       gap: 10px;
+      font-size: 20px;
     }
   }
   .awards-section-sub-container{
