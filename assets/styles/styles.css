@@ -535,7 +535,7 @@ main{
   gap: 50px;
   border-radius: 10px;
   width: 97%;
-  padding: 30px 40px 60px 40px;
+  padding: 30px 10px 60px 10px;
 }
 .about-info-display-section-sub-container-child-1{
   width: 100%;
@@ -1592,6 +1592,7 @@ footer{
   /* Info Display Section Starts */
   .about-info-display-section-sub-container{
     flex-direction: row;
+    padding: 30px 40px 60px 40px;
   }
   .about-info-display-section-sub-container-child-1{
     width: 40%;
@@ -1608,6 +1609,7 @@ footer{
 }
 .contacts-container{
   width: 47%;
+  padding-left: 40px;
 }
 
   /* Info Display Section Ends */
