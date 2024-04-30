@@ -680,7 +680,7 @@ main{
 .complete-project-section{
   background-color: #141410;
   width: 100%;
-  padding: 90px 20px 100px 20px;
+  padding: 90px 10px 100px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -697,7 +697,7 @@ main{
   }
 }
 .complete-project-section-sub-container-2{
-  width: 80%;
+  width: 95%;
   display: flex;
   justify-content: center;
   padding-top: 0;
@@ -706,18 +706,24 @@ main{
   h1{
     text-align: center;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 28px;
     font-weight: 400;
     margin-top: 5px;
   }
 }
 .complete-project-section-sub-container-3{
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 15px;
   width: 100%;
 }
 .complete-project-section-sub-container-3-child{
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 .img-card{
   display: flex;
@@ -740,7 +746,7 @@ main{
   }
 }
 .img-card > img{
-  align-self: center;
+    align-self: center;
     width: 95%;
     height: 95%;
     transition: width ease-in-out 0.3s, height ease-in-out;
@@ -751,21 +757,20 @@ main{
   }
 .h1-white-30px{
   color: #ffffff;
-  font-size: 30px;
+  font-size: 21px;
   font-weight: 600;
   margin-top: 0;
   padding-left: 20px;
   width: 97%;
-  height: 65px;
+  height: 10px;
   display: flex;
   justify-content: space-between;
-  /* gap: 50px; */
   align-items: center;
   span{
     background-color: #1B1B1C;
-    width: 10%;
-    height: 60px;
-    margin-bottom: 50px;
+    width: 8%;
+    height: 43px;
+    margin-bottom: 20px;
     border-radius: 5px;
     a{
       text-decoration: none;
@@ -783,8 +788,8 @@ main{
   justify-content: center;
   align-items: center;
   border: 1px solid #B0DA08;
-  width: 210px;
-  height: 210px;
+  width: 155px;
+  height: 155px;
   border-radius: 50%;
   position: relative;
   margin-top: 65px;
@@ -795,8 +800,8 @@ main{
       justify-content: center;
       align-items: center;
       background-color: #B0DA08;
-      width: 205px;
-      height: 205px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       position: absolute;
       top: -10px;
@@ -820,15 +825,15 @@ main{
       }
     }
 .animated-yellow-circle-container-child-1st-para{
-  font-size: 40px;
+  font-size: 25px;
   margin-top: 0;
   margin-bottom: 0;
 }
 .animated-yellow-circle-container-child-2nd-para{
-  font-size: 17px;
+  font-size: 13px;
+  text-align: center;
   font-weight: 500;
   margin-top: 0;
-  /* margin-bottom: 0; */
 }
 /* Complete Project Section styling ends here */
 
@@ -1642,8 +1647,42 @@ footer{
   .complete-project-section{
     padding: 90px 20px 100px 20px;
   }
-
-
+  .complete-project-section-sub-container-2{
+    width: 80%;
+    h1{
+      font-size: 60px;
+    }
+  }
+  .complete-project-section-sub-container-3{
+    flex-direction: row;
+  }
+  .complete-project-section-sub-container-3-child{
+    width: 50%;
+  }
+  .h1-white-30px{
+    font-size: 30px;
+    height: 65px;
+    margin-top: -20px;
+    span{
+      width: 10%;
+      height: 60px;
+      margin-bottom: 50px;
+    }
+  }
+  .animated-yellow-circle-container{
+    width: 210px;
+    height: 210px;
+  }
+  .animated-yellow-circle-container-child{
+      width: 205px;
+      height: 205px;
+    }
+  .animated-yellow-circle-container-child-1st-para{
+    font-size: 40px;
+  }
+  .animated-yellow-circle-container-child-2nd-para{
+    font-size: 17px;
+  }
   /* Complete Project section ends */
 
 
