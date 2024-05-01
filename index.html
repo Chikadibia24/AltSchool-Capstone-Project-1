@@ -19,7 +19,30 @@
 
 <body>
   <!-- Nav element starts here -->
+  <!-- <nav class="mobile-nav-bar">
+    <div>
+          <a href="">HOME</a>
+          <a href="">ABOUT</a>
+          <a href="">WORK</a>
+          <a href="">SERVICES</a>
+          <a href="">TESTIMONIAL</a>
+          <a href="">BLOG</a>
+          <a href="">CONTACT</a>
+    </div>
+  </nav> -->
+
   <nav class="nav-bar black-bg">
+    <div class="mobile-nav-container">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">WORK</a>
+            <a href="">SERVICES</a>
+            <a href="">TESTIMONIAL</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT</a>
+          
+    </div>
+
     <header class="logo-container">
      <a href="#"><img src="/assets/images/logo.png" alt="logo" class="logo"></a>
     </header>
@@ -60,9 +83,8 @@
         </a>
       </div>
       
-      <div class="fa-bars-container-mobile">
-        <span class="fa fa-bars" style="font-size:25px; color: #ffffff;" aria-hidden="true">
-        </span>
+      <div class="fa-bars-container-mobile" onclick="openAndCloseMobileMenu()">
+        <span class="open-close-icon"   style="font-size:25px; color: #ffffff;" aria-hidden="true">&#9776;</span>
       </div>
 
       <div class="fa-bars-container" onclick="openSideMenu()">
@@ -87,7 +109,7 @@
           <p class="side-menu-para-gray font14">
             Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil
           </p>
-
+        
           <p class="side-menu-para-gray font18">ADDRESS</p>
 
           <p class="side-menu-para-white font18">
