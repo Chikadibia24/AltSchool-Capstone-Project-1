@@ -467,8 +467,8 @@ main{
 
 /*--------------------------------------------*/
 
-/* Marquee Section styling starts here */
-.first-marquee-section{
+/* Horizontal Scroll Section styling starts here */
+.horizontal-scroll-section{
   width: 100%;
   padding: 0;
   margin: unset;
@@ -477,17 +477,54 @@ main{
   align-items:center;
 }
 
-.first-marquee-section > marquee{
+.horizontal-scroll-container{
   background-color: #B0DA08;
   width: 100%;
   height: 80px;
   margin: unset;
   display: flex;
   gap: 50px;
-  /* justify-content: space-between; */
   align-items: center;
 }
-/* Marquee Section styling ends here */
+.move-horizontal{
+  width: 25%;
+  animation-name: move-horizontal;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes move-horizontal {
+  0% {
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.move-horizontal-reverse{
+  width: 25%;
+  animation-name: move-horizontal-reverse;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes move-horizontal-reverse {
+  0% {
+    transform: translateX(100%);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+/* Horizontal Scroll Section styling ends here */
 
 /*--------------------------------------------*/
 
