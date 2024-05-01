@@ -473,9 +473,8 @@ main{
   padding: 0;
   margin: unset;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items:center;
-  background-color: blue;
 }
 
 .first-marquee-section > marquee{
@@ -484,7 +483,8 @@ main{
   height: 80px;
   margin: unset;
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
+  /* justify-content: space-between; */
   align-items: center;
 }
 /* Marquee Section styling ends here */
