@@ -469,8 +469,8 @@ main{
 
 /* Horizontal Scroll Section styling starts here */
 .horizontal-scroll-section{
+  background-color: #B0DA08;
   width: 100%;
-  padding: 0;
   margin: unset;
   display: flex;
   justify-content: center;
@@ -478,18 +478,18 @@ main{
 }
 
 .horizontal-scroll-container{
-  background-color: #B0DA08;
   width: 100%;
-  height: 80px;
+  height: 100px;
   margin: unset;
   display: flex;
   gap: 50px;
   align-items: center;
+  overflow: hidden;
 }
 .move-horizontal{
-  width: 25%;
+  width: 50%;
   animation-name: move-horizontal;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -505,9 +505,9 @@ main{
   }
 }
 .move-horizontal-reverse{
-  width: 25%;
+  width: 50%;
   animation-name: move-horizontal-reverse;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -814,12 +814,12 @@ main{
 }
 .img-card > img{
     align-self: center;
-    width: 95%;
-    height: 95%;
+    width: 94%;
+    height: 94%;
     transition: width ease-in-out 0.3s, height ease-in-out;
     &:hover{
-      width: 100%;
-      height: 100%;
+      width: 99%;
+      height: 99%;
     }
   }
 .h1-white-30px{
