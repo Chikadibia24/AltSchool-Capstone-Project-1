@@ -129,8 +129,7 @@ body{
 
 .let-talk{
   background-color: #c9f31d;
-  max-height: 45%;
-  height: auto;
+  height: 35%;
   max-width: 100%;
   border-radius: 5px;
   display: flex;
@@ -163,6 +162,101 @@ body{
   padding: 23px;
   &:hover{
     cursor: pointer;
+  }
+}
+.side-menu{
+  background-color: #000000;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.side-menu a{
+  text-decoration: none;
+  display: block;
+  /* transition: 0.3s; */
+}
+.close-button{
+  position: absolute;
+  top: 5px;
+  font-size: 30px;
+  margin-right: 10px;
+  align-self: flex-end;
+  background-color: #B0DA08;
+  width: 48px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.logo{
+  padding-left: 20px;
+}
+.font14{
+  font-size: 14px;
+}
+.font18{
+  font-size: 16px;
+}
+.side-menu-para-gray{
+  padding: 15px 15px 0 15px;
+  color:#818181;
+  
+}
+.side-menu-para-white{
+  color: #ffffff;
+  padding: 0 0 0 15px;
+  display: block;
+}
+.side-menu-social-icons-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+
+}
+.side-menu-social-icons-container a{
+    text-decoration: none;
+    background-color:#B0DA08;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    border-radius: 50%;
+}
+.side-menu-lets-talk-container{
+  align-self: center;
+  margin-top: 20px;
+  width: 95%;
+  background-color:#B0DA08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  a{
+    color: #000000;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 /* Navigation styling ends here */
@@ -1626,7 +1720,7 @@ footer{
     max-height: 37%;
   }
   .let-talk{
-  max-height: 47%;
+  height: 65%;
     a{
       font-size: 18px;
     }
