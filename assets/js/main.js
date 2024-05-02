@@ -13,14 +13,14 @@ function openAndCloseMobileMenu() {
   let mobileMenu = document.getElementsByClassName("mobile-nav-container")[0];
   let openCloseIcon = document.getElementsByClassName("open-close-icon")[0];
 
-  if (mobileMenu.style.height !== '100%') {
-    mobileMenu.style.height = "100%";
+  if (mobileMenu.style.height !== '100vh') {
+    mobileMenu.style.height = "100vh";
     openCloseIcon.innerHTML = "&#x2715;";
     mobileMenu.style.opacity = "1";
     mobileMenu.style.padding = "20px";
     
   } else {
-    mobileMenu.style.height = "0%";
+    mobileMenu.style.height = "0vh";
     openCloseIcon.innerHTML = "&#9776;";
     mobileMenu.style.opacity = "0";
     mobileMenu.style.padding = "20px";
