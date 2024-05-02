@@ -204,10 +204,10 @@ body{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
+  gap: 10px;
 }
 .side-menu a{
   text-decoration: none;
@@ -215,7 +215,8 @@ body{
 }
 .close-button{
   position: absolute;
-  top: 5px;
+  top: 10px;
+  right: 5px;
   font-size: 30px;
   margin-right: 10px;
   align-self: flex-end;
