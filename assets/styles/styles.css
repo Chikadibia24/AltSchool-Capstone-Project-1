@@ -47,7 +47,7 @@ body{
   left: 0;
   background-color:#1B1B1C;
   overflow-y: hidden;
-  transition: height ease 0.5s, opacity ease 0.5s;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
   gap: 10px;
