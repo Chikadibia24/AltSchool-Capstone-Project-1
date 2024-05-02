@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* Body styling starts here */
 body{
@@ -31,12 +34,13 @@ body{
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color: #000000;
   padding: 30px 5px 30px 0;
   margin: unset;
   position: sticky;
   top: 0;
   z-index: 2;
+  border-bottom: 1px solid #1B1B1C;
+  /* color:#1B1B1C; */
 }
 .mobile-nav-container{
   height: 0;
@@ -1783,14 +1787,22 @@ footer{
 }
 .footer-div-yellow-bg{
   background-color: #B0DA08;
-  padding: 6px 14px;
+  height: 48px;
+  width: 40px;
   border-radius: 5px;
-  span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
     font-size: 25px;
   }
-  &:hover{
-      cursor: pointer;
-    }
 }
 /* Footer styling ends here  */
 

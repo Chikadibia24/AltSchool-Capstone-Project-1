@@ -1,4 +1,4 @@
-// Side Menu Navigations Starts here
+// Function Open and Close Side Menu Navigation Starts here
 function openSideMenu() {
   document.getElementsByClassName("side-menu")[0].style.width = `300px`;
 }
@@ -6,9 +6,10 @@ function openSideMenu() {
 function closeSideMenu() {
   document.getElementsByClassName("side-menu")[0].style.width = `0`;
 }
-// Side Menu Navigation Stops here
+// Function Open and Close Side Menu Navigation Stops here
 
 
+// Function Open and Close Mobile Menu Navigation Starts here
 function openAndCloseMobileMenu() {
   let mobileMenu = document.getElementsByClassName("mobile-nav-container")[0];
   let openCloseIcon = document.getElementsByClassName("open-close-icon")[0];
@@ -26,6 +27,32 @@ function openAndCloseMobileMenu() {
     mobileMenu.style.padding = "20px";
   }
 }
+// Function Open and Close Mobile Menu Navigation Stops here
+
+
+// Function Scroll To The Top Starts here
+    function scrollToTop() {
+      document.body.scrollTop = `1px`;
+    }
+// Function Scroll To The Top ends here
+
+
+// Function Change NAV Background On Scroll Starts here
+    function changeNavBackground() {
+      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        document.getElementsByClassName("nav-bar")[0].style.backgroundColor = `#000000`;
+        document.getElementsByClassName(
+          "nav-bar"
+        )[0].style.borderBottomColor = `unset`;
+      } else {
+        document.getElementsByClassName("nav-bar")[0].style.backgroundColor = `unset`;
+        document.getElementsByClassName(
+          "nav-bar"
+        )[0].style.borderBottomColor = `#1B1B1C`;
+      }
+    }
+// Function Change NAV Background On Scroll Starts here
+
 
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName("fa-bars-container")[0].onclick =
@@ -36,9 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName("fa-bars-container-mobile")[0].onclick =
     openAndCloseMobileMenu;
   
-}
-
-)
+  document.getElementsByClassName("footer-div-yellow-bg")[0].onclick =
+    scrollToTop;
+  
+  window.onscroll = function () {changeNavBackground()};
+})
 
 
 
