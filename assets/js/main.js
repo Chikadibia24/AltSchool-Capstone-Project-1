@@ -1,6 +1,6 @@
 // Side Menu Navigations Starts here
 function openSideMenu() {
-  document.getElementsByClassName("side-menu")[0].style.width = `350px`;
+  document.getElementsByClassName("side-menu")[0].style.width = `300px`;
 }
 
 function closeSideMenu() {

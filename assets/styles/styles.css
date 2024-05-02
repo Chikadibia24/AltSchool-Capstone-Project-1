@@ -195,15 +195,16 @@ body{
 }
 .side-menu{
   background-color: #000000;
-  height: 100%;
+  height: 100vh;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   overflow-x: hidden;
-  transition: ease-in-out 0.4s;
-  padding: 60px 0;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-bottom: 45px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -231,14 +232,21 @@ body{
 .logo{
   padding-left: 20px;
 }
+.side-menu-text-container{
+  height: 600px;
+  width: 250px;
+}
 .font14{
   font-size: 13px;
+  padding-right: 0px;
 }
 .font18{
   font-size: 16px;
 }
 .side-menu-para-gray{
-  padding: 15px 15px 0 15px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-left: 15px;
   color:#818181;
   overflow: hidden;
   display: block;
@@ -250,18 +258,18 @@ body{
 }
 .side-menu-social-icons-container{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
-  gap: 15px;
-  width: 100%;
-  height: 100%;
-
+  gap: 10px;
+  width: 250px;
+  height: 50px;
+  padding-left: 17px;
 }
 .side-menu-social-icons-container a{
     text-decoration: none;
     background-color:#B0DA08;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,7 +279,8 @@ body{
 .side-menu-lets-talk-container{
   align-self: center;
   margin-top: 20px;
-  width: 95%;
+  height: 50px;
+  width: 253px;
   background-color:#B0DA08;
   display: flex;
   justify-content: center;
@@ -281,8 +290,8 @@ body{
     color: #000000;
     font-size: 18px;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 245px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
