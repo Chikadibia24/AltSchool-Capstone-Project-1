@@ -204,7 +204,7 @@ body{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  padding-bottom: 45px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
@@ -233,9 +233,8 @@ body{
   padding-left: 20px;
 }
 .side-menu-text-container{
-  height: 600px;
+  height: auto;
   width: 250px;
-  margin-bottom: 0;
 }
 .font14{
   font-size: 13px;
@@ -265,7 +264,6 @@ body{
   width: 250px;
   height: 45px;
   padding-left: 17px;
-  margin-top: 0;
 }
 .side-menu-social-icons-container a{
     text-decoration: none;
