@@ -207,7 +207,7 @@ body{
   padding-bottom: 45px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 }
 .side-menu a{
   text-decoration: none;
@@ -235,6 +235,7 @@ body{
 .side-menu-text-container{
   height: 600px;
   width: 250px;
+  margin-bottom: 0;
 }
 .font14{
   font-size: 13px;
@@ -262,8 +263,9 @@ body{
   align-items: center;
   gap: 10px;
   width: 250px;
-  height: 50px;
+  height: 45px;
   padding-left: 17px;
+  margin-top: 0;
 }
 .side-menu-social-icons-container a{
     text-decoration: none;
@@ -280,7 +282,7 @@ body{
   align-self: center;
   margin-top: 20px;
   height: 50px;
-  width: 253px;
+  width: 270px;
   background-color:#B0DA08;
   display: flex;
   justify-content: center;
