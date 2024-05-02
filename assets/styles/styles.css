@@ -1393,8 +1393,8 @@ main{
 }
 .center-div-with-50{
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   left: 0px;
@@ -1413,6 +1413,10 @@ main{
 } */
 
 .slide-horizontal-reverse-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   padding-left: 10px;
