@@ -54,6 +54,7 @@ function openAndCloseMobileMenu() {
 // Function Change NAV Background On Scroll Starts here
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName("fa-bars-container")[0].onclick =
     openSideMenu;
@@ -69,6 +70,3 @@ document.addEventListener('DOMContentLoaded', function () {
   window.onscroll = function () {changeNavBackground()};
 })
 
-
-
-// &#x2715;
