@@ -59,7 +59,6 @@ function dynamicPageUpdate(div){
     });
   
     document.querySelector(`#${div}`).style.display = "initial";
-  
   }
 // Function Dynamic Section Update Stops here
 
