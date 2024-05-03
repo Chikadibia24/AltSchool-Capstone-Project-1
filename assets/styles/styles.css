@@ -812,6 +812,32 @@ main{
   gap: 30px;
   width: 100%;
 }
+.experience-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #1B1B1C;
+  border-bottom: 1px solid #1B1B1C;
+  margin-bottom: -31px;
+  padding: 40px 0;
+  transition: ease-in-out 0.5s;
+  &:hover{
+    border-top: 1px solid #B0DA08;
+    border-bottom: 1px solid #B0DA08;
+  }
+}
+.experience-para-yellow{
+  color: #B0DA08;
+  font-size: 17px;
+}
+.experience-para-gray{
+  color: rgb(128, 121, 121);
+}
+.experience-para-white{
+  color: #ffffff;
+  font-size: 18px;
+}
 .contacts-container{
   background-color: #1B1B1C;
   width: 100%;
@@ -848,6 +874,31 @@ main{
   text-decoration: none;
   color: #ffffff;
   font-size: 30px;
+}
+.skills-container{
+  background-color: #1B1B1C;
+  width: 100%;
+  padding: 26px 0 26px 40px;
+  border: 1px solid #1B1B1C;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: border ease-in-out 1s;
+  &:hover{
+    border: 1px solid #B0DA08;
+  }
+}
+.skills-para-gray{
+  color: rgb(128, 121, 121);
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.skills-para-white{
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
 }
 /* Info Display Section styling ends here */
 
