@@ -1,0 +1,40 @@
+
+/* NOTE: This is Alpha Version of Body-Scrolling Animation Effects. It's a work in Progress as I have just started working on it. */
+
+
+
+
+/* Animation Scroll Effects For Section Elements Starts */
+/* section{
+  animation: sectionBodyScrolling 5s ease-in-out;
+} */
+@keyframes sectionBodyScrolling {
+  0%{
+    transform: translateY(100%);
+  }
+  /* 50%{
+    transform: scaleX(50%);
+  } */
+  100%{
+    transform: translateY(0%);
+  }
+}
+/* Animation Scroll Effects For Section Elements ends */
+
+
+/* Animation Scroll Effects For DIV Elements Starts */
+div{
+  animation: divBodyScrolling 5s ease-in-out;
+}
+@keyframes divBodyScrolling {
+  0%{
+    transform: translateY(100%);
+  }
+  /* 50%{
+    transform: scaleX(50%);
+  } */
+  100%{
+    transform: translateY(0%);
+  }
+}
+/* Animation Scroll Effects For DIV Elements ends */
