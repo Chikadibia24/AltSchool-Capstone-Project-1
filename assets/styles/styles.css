@@ -776,7 +776,7 @@ main {
   width: 100%;
   animation-name: showDiv;
   animation-timing-function: linear;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 @keyframes showDiv {
   0% {
