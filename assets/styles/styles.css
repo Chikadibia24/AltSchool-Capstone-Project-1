@@ -1212,6 +1212,7 @@ main {
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 30px;
+  transition: ease-in-out 1s;
   span {
     background-color: #b0da08;
     display: flex;
@@ -1279,6 +1280,7 @@ main {
 }
 .provided-services-section-sub-container-3-child-1 {
   border-top: 1px solid rgb(55, 59, 72);
+  transition: ease-in-out 1s;
   &:hover {
     border-top: 1px solid #b0da08;
   }
@@ -1295,6 +1297,7 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 35px 10px;
+  transition: ease-in-out 1s;
   &:hover {
     border-bottom: 1px solid #b0da08;
     span {
@@ -1351,6 +1354,7 @@ main {
   width: 70%;
   height: 50px;
   border-radius: 5px;
+  transition: ease-in-out 1s;
   a {
     text-decoration: none;
     font-size: 30px;
@@ -1409,6 +1413,7 @@ main {
   border: 1px solid rgb(49, 48, 48);
   border-radius: 10px;
   padding: 0 28px 20px 28px;
+  transition: ease-in-out 1s;
   &:hover {
     border-color: #b0da08;
   }
@@ -1680,6 +1685,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: ease-in-out 1s;
   gap: 15px;
   padding: 25px 0;
   border-bottom: 1px solid rgb(49, 48, 48);
@@ -1713,6 +1719,7 @@ main {
     color: #ffffff;
     font-size: 18px;
     margin-top: 5px;
+    transition: ease-in-out 1s;
   }
 }
 .width-40 {
@@ -1740,6 +1747,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ease-in-out 1s;
   /* border: 2px solid green; */
 }
 .eye-icon {
@@ -1760,6 +1768,7 @@ main {
 }
 .fa-eye {
   color: #ffffff;
+  transition: ease-in-out 1s;
 }
 /* My Blog section styling ends here  */
 
@@ -2387,6 +2396,9 @@ footer {
       .image-container {
         img {
           display: initial;
+          animation-name: imageAppear;
+          animation-duration: 0.9s;
+          animation-timing-function: ease-in-out;
         }
       }
       h1 {
@@ -2412,6 +2424,14 @@ footer {
   .width-40 {
     width: 40%;
     align-items: flex-start;
+  }
+  @keyframes imageAppear {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
   }
   .image-container {
     img {
