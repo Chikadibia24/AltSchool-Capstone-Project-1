@@ -19,6 +19,23 @@ function changeNavBackground() {
 // Function Change NAV Background On Scroll Starts here
 
 
+
+//Function Animate Hover Effect on Let's Talk Button
+let letsTalk = document.querySelector("#letsTalk");
+  
+letsTalk.addEventListener("mouseover", function () {
+  letsTalk.style.setProperty("--myAnimate", "overlayIn");
+  letsTalk.style.setProperty("--myHeight", "100%");
+    })
+  
+letsTalk.addEventListener("mouseout", function () {
+  letsTalk.style.setProperty("--myAnimate", "overlayOut");
+  letsTalk.style.setProperty("--myHeight", "0%");
+    });
+//Function Animate Hover Effect on Let's Talk Button
+
+
+
 // Function Open and Close Side Menu Navigation Starts here
 function openSideMenu() {
   document.getElementsByClassName("side-menu")[0].style.width = `300px`;
@@ -28,6 +45,7 @@ function closeSideMenu() {
   document.getElementsByClassName("side-menu")[0].style.width = `0`;
 }
 // Function Open and Close Side Menu Navigation Stops here
+
 
 
 // Function Open and Close Mobile Menu Navigation Starts here
@@ -50,6 +68,7 @@ function openAndCloseMobileMenu() {
 // Function Open and Close Mobile Menu Navigation Stops here
 
 
+
 // Function Dynamic Section Update Starts here
 function dynamicPageUpdate(div){
     document.querySelectorAll(
@@ -61,6 +80,7 @@ function dynamicPageUpdate(div){
     document.querySelector(`#${div}`).style.display = "initial";
   }
 // Function Dynamic Section Update Stops here
+
 
 
 // Function Scroll To The Top Starts here
@@ -94,5 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
       dynamicPageUpdate(this.dataset.div);
     }
   });
-  
+
 });

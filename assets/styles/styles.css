@@ -154,10 +154,20 @@ body {
   width: auto;
   height: 100%;
 }
-
-.let-talk {
-  background-color: #c9f31d;
+.let-talk-container{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
   height: 75%;
+  max-width: 100%;
+}
+.let-talk{
+  background-color: #c9f31d;
+  height: 100%;
   max-width: 100%;
   border-radius: 5px;
   display: flex;
@@ -165,19 +175,64 @@ body {
   align-items: center;
   gap: 5px;
   padding: 21px 8px;
-  a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    width: 100%;
+  position: relative;
+  /* transition: all; */
+}
+.let-talk::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: var(--myHeight);
+  background-color: rgba(1, 1, 1, 0.15);
+  /* animation: overlayIn 1s ease-in-out, overlayOut 1s ease-in-out; */
+  animation-name: var(--myAnimate);
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes overlayIn {
+  0%{
+    height: 0%;
+  }
+  100%{
     height: 100%;
   }
 }
+
+/* .let-talk::after{
+  content: "";
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.1);
+  animation: overlayOut 1s ease-in-out, overlayIn 1s ease-in-out;
+} */
+
+@keyframes overlayOut {
+  0%{
+    height: 100%;
+  }
+  100%{
+    height: 0%;
+  }
+}
+
+/* .overlay-hover{
+  background-color:#b0da08;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+} */
+
 .fa-bars-container {
   background-color: #ffffff;
   width: 19%;
@@ -1939,12 +1994,13 @@ footer {
     max-width: 83%;
     max-height: 80%;
   }
-  .let-talk {
+  .let-talk-container{
+    font-size: 18px;
     height: 44%;
+  }
+  .let-talk {
+    height: 100%;
     padding: 5px 15px;
-    a {
-      font-size: 18px;
-    }
   }
   .fa-bars-container-mobile {
     display: none;
