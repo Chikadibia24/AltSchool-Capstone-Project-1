@@ -731,6 +731,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ease-in-out 0.8s;
   &:hover {
     background-color: #b0da08;
     color: #000000;
