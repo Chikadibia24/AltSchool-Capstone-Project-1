@@ -23,9 +23,9 @@
 
 
 /* Animation Scroll Effects For DIV Elements Starts */
-div{
+/* div{
   animation: divBodyScrolling 5s ease-in-out;
-}
+} */
 @keyframes divBodyScrolling {
   0%{
     transform: translateY(100%);
